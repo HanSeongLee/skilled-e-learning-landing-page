@@ -1,0 +1,24 @@
+
+.button {
+  min-width: 140px;
+  min-height: 48px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &.primary {
+    min-width: 167px;
+    min-height: 56px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+  }
+
+  &.secondary {
+    background: #13183F;
+  }
+}
