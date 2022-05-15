@@ -24,9 +24,20 @@ const HeroSection: React.FC = () => {
                 <picture>
                     <source type={'image/png'}
                             srcSet={'/img/image-hero-mobile.png, /img/image-hero-mobile@2x.png 2x'}
+                            media={'(max-width: 767px)'}
                     />
                     <source type={'image/webp'}
                             srcSet={'/img/image-hero-mobile.webp, /img/image-hero-mobile@2x.webp 2x'}
+                            media={'(max-width: 767px)'}
+                    />
+
+                    <source type={'image/png'}
+                            srcSet={'/img/image-hero-tablet.png, /img/image-hero-tablet@2x.png 2x'}
+                            media={'(min-width: 768px)'}
+                    />
+                    <source type={'image/webp'}
+                            srcSet={'/img/image-hero-tablet.webp, /img/image-hero-tablet@2x.webp 2x'}
+                            media={'(min-width: 768px)'}
                     />
 
                     <img className={styles.image}

@@ -3,6 +3,24 @@
 .heroSection {
   padding: 38px 0 0;
 
+  @include media(">tablet") {
+    padding: 99px 0 186px;
+  }
+
+  .container {
+    @include media(">tablet") {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .content {
+    @include media(">tablet") {
+      width: 398px;
+    }
+  }
+
   .title {
     @include HeadingL;
     margin-bottom: 26px;
@@ -16,5 +34,13 @@
 
   .image {
     width: 100%;
+
+    @include media(">tablet") {
+      position: absolute;
+      top: -260px;
+      right: -325px;
+      max-width: 695px;
+    }
   }
 }
+
