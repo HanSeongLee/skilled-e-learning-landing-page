@@ -1,0 +1,20 @@
+@import "styles/utils";
+
+.heroSection {
+  padding: 38px 0 0;
+
+  .title {
+    @include HeadingL;
+    margin-bottom: 26px;
+  }
+
+  .description {
+    @include BodyS;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
