@@ -7,6 +7,10 @@
     padding: 99px 0 186px;
   }
 
+  @include media(">desktop") {
+    padding: 172px 0 226px;
+  }
+
   .container {
     @include media(">tablet") {
       position: relative;
@@ -19,17 +23,31 @@
     @include media(">tablet") {
       width: 398px;
     }
+
+    @include media(">desktop") {
+      width: 457px;
+    }
   }
 
   .title {
     @include HeadingL;
     margin-bottom: 26px;
+
+    @include media(">desktop") {
+      @include HeadingXL;
+      margin-bottom: 29px;
+    }
   }
 
   .description {
     @include BodyS;
     font-weight: 500;
     margin-bottom: 24px;
+
+    @include media(">desktop") {
+      @include BodyM;
+      margin-bottom: 40px;
+    }
   }
 
   .image {
@@ -40,6 +58,12 @@
       top: -260px;
       right: -325px;
       max-width: 695px;
+    }
+
+    @include media(">desktop") {
+      top: -400px;
+      right: -520px;
+      max-width: 1046px;
     }
   }
 }

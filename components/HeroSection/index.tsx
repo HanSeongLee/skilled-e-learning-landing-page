@@ -33,11 +33,20 @@ const HeroSection: React.FC = () => {
 
                     <source type={'image/png'}
                             srcSet={'/img/image-hero-tablet.png, /img/image-hero-tablet@2x.png 2x'}
-                            media={'(min-width: 768px)'}
+                            media={'(max-width: 1439px)'}
                     />
                     <source type={'image/webp'}
                             srcSet={'/img/image-hero-tablet.webp, /img/image-hero-tablet@2x.webp 2x'}
-                            media={'(min-width: 768px)'}
+                            media={'(max-width: 1439px)'}
+                    />
+
+                    <source type={'image/png'}
+                            srcSet={'/img/image-hero-desktop.png, /img/image-hero-desktop@2x.png 2x'}
+                            media={'(min-width: 1440px)'}
+                    />
+                    <source type={'image/webp'}
+                            srcSet={'/img/image-hero-desktop.webp, /img/image-hero-desktop@2x.webp 2x'}
+                            media={'(min-width: 1440px)'}
                     />
 
                     <img className={styles.image}
