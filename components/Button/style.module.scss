@@ -1,3 +1,4 @@
+@import "styles/utils";
 
 .button {
   min-width: 140px;
@@ -11,14 +12,38 @@
   cursor: pointer;
   outline: none;
 
+  @include media(">tablet") {
+    min-width: 167px;
+    min-height: 56px;
+  }
+
+  @include media(">desktop") {
+    @include BodyM;
+    font-weight: 700;
+  }
+
   &.primary {
     min-width: 167px;
     min-height: 56px;
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     border-radius: 31.5px;
+
+    @include media(">desktop") {
+      &:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+      }
+    }
   }
 
   &.secondary {
     background: #13183F;
+
+    @include media(">desktop") {
+      transition: background 0.3s;
+
+      &:hover {
+        background: #666CA3;
+      }
+    }
   }
 }
