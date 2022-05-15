@@ -1,6 +1,11 @@
+@import "styles/utils";
 
 .header {
   padding-top: 16px;
+
+  @include media(">tablet") {
+    padding-top: 24px;
+  }
 
   .container {
     display: flex;
