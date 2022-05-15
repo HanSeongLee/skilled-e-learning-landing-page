@@ -1,6 +1,6 @@
 @import '~include-media/dist/include-media';
 
-$breakpoints: (mobile: 568px, tablet: 767px, desktop: 1440px);
+$breakpoints: (mobile: 568px, tablet: 767px, desktop: 1439px);
 
 @mixin BodyS {
   font-weight: 700;
