@@ -6,14 +6,18 @@
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
   border-radius: 10px;
   padding: 56px 28px 32px;
-  margin-top: 28px;
+  margin-top: 24px;
+
+  @include media(">tablet") {
+    padding-left: 32px;
+    padding-right: 22px;
+  }
 
   .icon {
     position: absolute;
-    top: 0;
+    top: -24px;
     left: 28px;
     width: 56px;
-    transform: translateY(-50%);
   }
 
   .title {
