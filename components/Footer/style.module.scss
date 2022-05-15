@@ -1,0 +1,15 @@
+
+.footer {
+  background: #13183F;
+  padding: 36px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+  }
+}
