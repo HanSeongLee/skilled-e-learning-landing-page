@@ -4,7 +4,9 @@
   padding-top: 16px;
 
   @include media(">tablet") {
+    position: relative;
     padding-top: 24px;
+    z-index: 1;
   }
 
   .container {
