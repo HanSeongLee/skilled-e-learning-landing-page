@@ -10,7 +10,7 @@
   img {
     width: 89px;
 
-    @include media(">destkop") {
+    @include media(">desktop") {
       width: 114px;
     }
   }
