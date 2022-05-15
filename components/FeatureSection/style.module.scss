@@ -4,16 +4,31 @@
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
   padding-bottom: 80px;
 
+  @include media(">tablet") {
+    padding-bottom: 86px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
     grid-gap: 16px;
+
+    @include media(">tablet") {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 32px 10px;
+    }
   }
 
   .checkoutCard {
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     border-radius: 10px;
     padding: 24px 28px 32px;
+
+    @include media(">tablet") {
+      padding: 56px 24px 56px 32px;
+      margin-top: 24px;
+    }
 
     .title {
       @include HeadingS;
