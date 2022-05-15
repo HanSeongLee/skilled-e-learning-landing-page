@@ -8,6 +8,10 @@
     padding-bottom: 86px;
   }
 
+  @include media(">desktop") {
+    padding-bottom: 140px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -17,6 +21,11 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 32px 10px;
+    }
+
+    @include media(">desktop") {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 56px 30px;
     }
   }
 
@@ -30,10 +39,19 @@
       margin-top: 24px;
     }
 
+    @include media(">desktop") {
+      padding: 64px 32px 138px;
+    }
+
     .title {
       @include HeadingS;
       line-height: 32px;
       color: #FFFFFF;
+
+      @include media(">desktop") {
+        @include HeadingM;
+        color: #FFFFFF;
+      }
     }
   }
 }
